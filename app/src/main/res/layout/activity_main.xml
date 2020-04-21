@@ -1,0 +1,107 @@
+
+<!-- FRASER WATT S1620179 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="Fraser Watt - S1620179"
+        android:id="@+id/salutation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editSearchTxt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Road Name...">
+        </EditText>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/search_button"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick_Search"
+            android:text="go"
+            android:textColor="#032cfc"
+            android:typeface="serif"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick_CI"
+            android:typeface="serif"
+            android:text="Current Incidents"
+            android:textColor="#FFF"
+            android:background="@drawable/info_buttons"/>
+
+        <Button
+            android:id="@+id/roadworksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick_RW"
+            android:typeface="serif"
+            android:text="Roadworks"
+            android:textColor="#FFF"
+            android:background="@drawable/info_buttons"/>
+
+        <Button
+            android:id="@+id/plannedRoadworksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick_PW"
+            android:typeface="serif"
+            android:text="Planned Roadworks"
+            android:textColor="#FFF"
+            android:background="@drawable/info_buttons"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/print_results"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Please select to view traffic information."/>
+    </ScrollView>
+
+</LinearLayout>
+

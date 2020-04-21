@@ -1,0 +1,2 @@
+rootProject.name='MPD_CW_Fraser_Watt'
+include ':app'
